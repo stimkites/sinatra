@@ -1,0 +1,260 @@
+
+/*Buttons*/
+.button-secondary.sinatra-butt {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+    margin: 1px;
+    float: right;
+    color: #777;
+}
+
+.button-secondary.sinatra-butt::before {
+    font-family: "Dashicons";
+    font-size: 20px;
+}
+
+.button-secondary.sinatra-translate:hover{
+    color: #0d71bb;
+}
+
+.button-secondary.sinatra-translate::before{
+    content: "\f326";
+}
+
+.button-secondary.sinatra-remove {
+    margin-left: 6px;
+}
+
+.button-secondary.sinatra-remove::before{
+    content: "\f182";
+}
+.button-secondary.sinatra-remove:hover{
+    color: orangered;
+}
+
+.button-secondary.sinatra-restore:hover {
+    color: #0d71bb;
+}
+.button-secondary.sinatra-restore::before{
+    content: "\f321";
+}
+
+.button-secondary.sinatra-save-single:hover{
+    color: limegreen;
+}
+.button-secondary.sinatra-save-single::before{
+    content: "\f147";
+}
+
+.button-secondary.sinatra-revise:hover{
+    color: #0b0b0b;
+}
+.button-secondary.sinatra-revise::before{
+    content: "\f464";
+}
+
+/**
+    Customized Select
+ */
+
+select.sinatra-select {
+    outline: 0 none !important;
+    -webkit-appearance: none;
+    display: inline-block;
+    padding: 3px 5px;
+    transition: border-color 0.2s;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: linear-gradient( #fff, #fff, #eee );
+    color: #555;
+    line-height: 1;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: left;
+}
+
+select.sinatra-select:focus {
+    outline:none;
+}
+
+select.sinatra-select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.yandex-service{
+    float: right;
+    color: #999;
+    font-size: 70%;
+}
+.header-sinatra {
+    font-weight: normal;
+    color: #0d71bb;
+}
+
+table.sinatra-options th,
+table.sinatra-options td {
+    word-wrap: unset;
+    white-space: nowrap;
+}
+
+table.sinatra .row-original:not(:first-child) td {
+    border-top: 1px solid #ccc;
+}
+
+table.sinatra-revision {
+    margin: -1px;
+    border-right: none;
+}
+
+.heading-logo {
+    color: #50bb85;
+    font-style: normal;
+}
+
+table.sinatra-revision th {
+    font-weight: bold;
+}
+
+table.sinatra-revision pre {
+    outline: none;
+    white-space: pre-line;
+    position: relative;
+    display: block;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+table.sinatra-revision th,
+table.sinatra-revision td {
+    vertical-align: top;
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+table.sinatra-revision td.original,
+table.sinatra-revision td.editable {
+    width: 44%;
+    overflow: auto;
+}
+
+table.sinatra-revision td.editable {
+    border-left: 1px dotted #eee;
+    border-bottom: 1px dotted #eee;
+    background: #fefefe;
+}
+
+
+.column-actions {
+    width: 100px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.column-content {
+    width: 50%;
+}
+
+.sinatra-search {
+    display: inline-block;
+    float: right;
+}
+
+.sinatra-search input {
+    padding: 4px 26px;
+    margin-top: 10px;
+}
+
+.sinatra-search .search-icon {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 15px -35px 0 3px;
+}
+
+.sinatra-search .search-icon:after {
+    font-family: Dashicons;
+    font-size: 20px;
+    content: "\f179";
+    color: #888;
+}
+
+.search-reset {
+    margin: 15px 0 0 238px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+
+.search-reset:after {
+    font-family: Dashicons;
+    font-size: 20px;
+    content: "\f335";
+    color: #333;
+}
+
+#translate_object {
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.paging {
+    color: #333;
+    padding: 3px 10px;
+    width: 12px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: #dedede;
+    cursor: pointer;
+}
+
+.paging.inactive {
+    color: #ccc;
+    background: #fff;
+    cursor: not-allowed;
+}
+
+.current-page {
+    height: 28px;
+}
+
+.sinatra-content .spinner{
+    display: block;
+    margin: 80px auto;
+    visibility: visible;
+    float: none;
+}
+
+body button.options-saved {
+    -webkit-box-shadow: 0 0 5px 0 limegreen !important;
+    box-shadow: 0 0 5px 0 limegreen !important;
+
+}
+
+body button.options-not-saved {
+    -webkit-box-shadow: 0 0 5px 0 orangered !important;
+    box-shadow: 0 0 5px 0 orangered !important;
+}
+
+/*Matchers*/
+.matcher {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: inset;
+    border-width: 8px 0 8px 16px;
+    margin-left: -22px;
+    border-color: transparent transparent transparent #000;
+    transition: all .3s linear;
+}
